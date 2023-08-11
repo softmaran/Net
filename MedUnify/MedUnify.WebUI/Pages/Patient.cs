@@ -1,4 +1,5 @@
 ﻿using MedUnify.Inpatient.ViewModel;
+using MedUnify.WebUI.Repository;
 using Microsoft.AspNetCore.Components;
 
 namespace MedUnify.WebUI.Pages
