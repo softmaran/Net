@@ -20,6 +20,7 @@ namespace MedUnify.Inpatient.API.Controllers
             patientService = ptService;
             patientVisitService = visitService;
         }
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetListAsync()
         {

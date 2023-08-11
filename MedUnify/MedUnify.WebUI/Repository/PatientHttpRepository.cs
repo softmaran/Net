@@ -12,9 +12,17 @@ namespace MedUnify.WebUI.Repository
             _client = client;
             _options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         }
+
+        public async Task<bool> Delete(string id)
+        {
+            var response = await _client.DeleteAsync(@"patient/{id}");
+            Console.WriteLine(response.StatusCode.ToString());
+            return response.IsSuccessStatusCode;
+        }
+
         public async Task<List<PatientViewModel>> GetPatients()
         {
-            var response = await _client.GetAsync("patients");
+            var response = await _client.GetAsync("patient");
             var content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {

@@ -1,15 +1,16 @@
-﻿@page "/patients"
+﻿@page "/patient"
+@using MedUnify.WebUI.Pages.Components
 <div class="row">
     <div class="col-md-10">
         @*Place for search and sort*@
     </div>
     <div class="col-md-2">
-        <a href="/add">Create Patient</a>
+        <a href="/">Create Patient</a>
     </div>
 </div>
 <div class="row">
     <div class="col">
-        @*Place for patients*@
+        <PatientContainer Patients="PatientList"></PatientContainer>
     </div>
 </div>
 <div class="row">

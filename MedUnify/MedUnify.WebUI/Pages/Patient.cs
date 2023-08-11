@@ -13,7 +13,10 @@ namespace MedUnify.WebUI.Pages
         {
             PatientList = await PatientRepo.GetPatients();
             //just for testing
-
+            foreach (var item in PatientList)
+            {
+                await Console.Out.WriteLineAsync(item.FirstName);
+            }
         }
     }
 }

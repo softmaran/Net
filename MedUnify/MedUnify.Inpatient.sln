@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedUnify.Inpatient.DAL", "M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedUnify.Inpatient.ViewModel", "MedUnify.Inpatient.ViewModel\MedUnify.Inpatient.ViewModel.csproj", "{44DC76BD-9782-4132-974C-29BF1606147D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedUnify.Inpatient.SharedModel", "MedUnify.Inpatient.SharedModel\MedUnify.Inpatient.SharedModel.csproj", "{98BF33A7-80F8-4D5B-9109-BF7AD8B7FBE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedUnify.Inpatient.SharedModel", "MedUnify.Inpatient.SharedModel\MedUnify.Inpatient.SharedModel.csproj", "{98BF33A7-80F8-4D5B-9109-BF7AD8B7FBE3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{49260E6E-725C-4688-9A3B-1D16AD7EF0DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedUnify.WebUI", "MedUnify.WebUI\MedUnify.WebUI.csproj", "{A776F1B8-CF90-4F35-922E-C7777C20785E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedUnify.WebUI", "MedUnify.WebUI\MedUnify.WebUI.csproj", "{A776F1B8-CF90-4F35-922E-C7777C20785E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

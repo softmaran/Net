@@ -31,18 +31,6 @@ public class Program
              options.Authority = authSetting.IdentityServer;
          });
 
-        builder.Services.AddCors(options =>
-        {
-            options.AddPolicy("MyCorsPolicy",
-                builder =>
-                {
-                    builder.AllowAnyOrigin()
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-                });
-        });
-
-
         var app = builder.Build();
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
@@ -52,10 +40,12 @@ public class Program
         }
 
         app.UseHttpsRedirection();
+        app.UseCors(x => { 
+            x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+        });
 
         app.UseAuthentication();
         app.UseAuthorization();
-        app.UseCors("MyCorsPolicy");
         using var serviceScope = ((IApplicationBuilder)app).ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope();
         var context = serviceScope.ServiceProvider.GetService<InpatientDbContext>();
         context?.Database.Migrate();
