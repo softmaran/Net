@@ -1,0 +1,33 @@
+{
+  "Organizations": [
+    {
+      "Name": "HCA Hospital",
+      "Code": "HCA",
+      "Description": "diam nonummy. elit amet.aliquam co - ET0068",
+      "Id": 1,
+      "CreatedAt": "2019-03-13T00:00:00"
+    }
+  ],
+  "Patients": [
+    {
+      "FirstName": "aliquam",
+      "LastName": "magna",
+      "Address": "adipiscing consectetuer",
+      "State": "Newyork USA",
+      "City": "Newyork",
+      "OrganizationId": 1,
+      "Id": 1,
+      "CreatedAt": "2012-09-29T00:00:00"
+    },
+    {
+      "FirstName": "adipiscing ",
+      "LastName": "consect",
+      "Address": "lorem diam ipsum amet eui",
+      "State": "dolore erat euismod ut. erat d",
+      "City": "sed dolore erat diam dolor. diam ipsum amet",
+      "OrganizationId": 1,
+      "Id": 2,
+      "CreatedAt": "2013-08-13T00:00:00"
+    }
+  ]
+}
