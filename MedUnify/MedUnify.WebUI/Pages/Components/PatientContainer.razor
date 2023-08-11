@@ -25,7 +25,7 @@
                         @patient.LastName
                     </td>
                     <td class="align-middle">
-                        $@patient.City
+                        @patient.City
                     </td>
                     <td class="align-middle">
                         <button type="button" class="btn btn-info">Update</button>
@@ -37,6 +37,9 @@
             }
         </tbody>
     </table>
+    <span class="warn">
+        @Status
+    </span>
 }
 else
 {

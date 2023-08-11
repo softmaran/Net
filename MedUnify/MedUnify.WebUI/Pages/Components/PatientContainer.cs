@@ -12,6 +12,8 @@ namespace MedUnify.WebUI.Pages.Components
         [Parameter]
         public List<PatientViewModel> Patients { get; set; }
 
+        public string Status { get; set; }
+
         protected async Task OnDeletePatient(MouseEventArgs mouseEventArgs, PatientViewModel patient)
         {
             if (Patients?.Any(n => n == patient) ?? false)
@@ -19,6 +21,10 @@ namespace MedUnify.WebUI.Pages.Components
                 if (await PatientRepo.Delete(patient.ID.ToString()))
                 {
                     Patients.Remove(Patients.First(n => n == patient));
+                }
+                else
+                {
+                    Status = "Api call failed! Please check console.";
                 }
             }
         }
